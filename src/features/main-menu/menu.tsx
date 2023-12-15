@@ -31,7 +31,7 @@ export const MainMenu = () => {
         </Button>
         <Button
           asChild
-          className="rounded-full w-[40px] h-[40px] p-1 text-primary"
+          className="rounded-full w-[40px] h-[40px] p-2 text-primary"
           variant={"outline"}
         >
           <Link href="/" title="Home">
