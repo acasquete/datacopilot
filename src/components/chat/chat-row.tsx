@@ -2,7 +2,7 @@
 import { ChatRole } from "@/features/chat/chat-services/models";
 import { isNotNullOrEmpty } from "@/features/chat/chat-services/utils";
 import { cn } from "@/lib/utils";
-import { CheckIcon, ClipboardIcon, UserCircle } from "lucide-react";
+import { CheckIcon, ClipboardIcon, User } from "lucide-react";
 import { FC, useState } from "react";
 import { Markdown } from "../markdown/markdown";
 import Typography from "../typography";
@@ -36,7 +36,7 @@ const ChatRow: FC<ChatRowProps> = (props) => {
     >
       <div
         className={cn(
-          "flex flex-col  max-w-[690px] border overflow-hidden  p-2 gap-2"
+          "flex flex-col  max-w-[690px] border overflow-hidden  p-2 gap-4"
         )}
       >
         <div className="flex flex-1">
@@ -47,9 +47,9 @@ const ChatRow: FC<ChatRowProps> = (props) => {
                   <AvatarImage src={props.profilePicture} />
                 </Avatar>
               ) : (
-                <UserCircle
-                  width={40}
-                  height={40}
+                <User
+                  width={30}
+                  height={30}
                   strokeWidth={1.2}
                   className="text-primary"
                 />

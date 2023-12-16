@@ -10,7 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LogOut, UserCircle } from "lucide-react";
+import { LogOut, User } from "lucide-react";
 import { signOut, useSession } from "next-auth/react";
 
 const UserProfile = () => {
@@ -31,7 +31,7 @@ const UserProfile = () => {
                 />
               </Avatar>
             ) : (
-              <UserCircle></UserCircle>
+              <User></User>
             )}
           </Button>
         </div>
