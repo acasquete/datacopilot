@@ -17,7 +17,7 @@ export const CitationAction = async (
   return (
     <div className="flex flex-col gap-4">
       <div className="border rounded-sm p-2">
-        <div className="font-bold">Idd</div>
+        <div className="font-bold">Id</div>
         <div>{firstResult.id} </div>
       </div>
       <div className="border rounded-sm p-2">
