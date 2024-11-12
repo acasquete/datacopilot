@@ -35,3 +35,5 @@ next-env.d.ts
 .azure/
 infra/aad_setup.sh
 .vscode
+/.idea/encodings.xml
+/.idea/indexLayout.xml
