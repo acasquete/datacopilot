@@ -49,7 +49,7 @@ You can deploy the application using one of the following options:
 1. Run `azd up` to provision and deploy the application
 
 ```pwsh
-azd init -t microsoft/azurechat
+azd init -t microsoft/azurechataz
 azd up
 
 # if you are wanting to see logs run with debug flag

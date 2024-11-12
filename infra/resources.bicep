@@ -273,6 +273,8 @@ resource kv 'Microsoft.KeyVault/vaults@2021-06-01-preview' = {
     enabledForDeployment: false
     enabledForDiskEncryption: true
     enabledForTemplateDeployment: false
+    enableSoftDelete: true 
+    enablePurgeProtection: true
   }
 
   resource AZURE_OPENAI_API_KEY 'secrets' = {
@@ -506,7 +508,9 @@ resource storage 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   tags: tags
   kind: 'StorageV2'
   sku: storageServiceSku
-
+  properties: {
+      minimumTlsVersion: 'TLS1_2'
+  }
   resource blobServices 'blobServices' = {
     name: 'default'
     resource container 'containers' = {
